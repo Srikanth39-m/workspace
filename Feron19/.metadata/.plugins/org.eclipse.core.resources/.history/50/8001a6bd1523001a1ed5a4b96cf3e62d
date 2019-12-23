@@ -1,0 +1,9 @@
+package feron.FeronHealth;
+
+import org.testng.annotations.Test;
+
+public class feronLogin {
+  @Test
+  public void f() {
+  }
+}

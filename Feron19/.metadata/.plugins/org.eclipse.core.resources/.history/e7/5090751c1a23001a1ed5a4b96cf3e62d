@@ -1,0 +1,94 @@
+#Home page 
+url = http://grepthorhosting.com/feron/
+
+# Links
+home = //a[@title='Home']
+aboutus = (//a[@href='http://grepthorhosting.com/feron/about_Us'])[2]
+products = (//a[@href='#'])[6]
+onlineproducts = (//a[@href='#'])[7]
+contactus = (//a[@title='Contact Us'])
+signup = (//a[@title='Signup'])
+login = //a[@title='Login']
+
+#cart and wishlist
+cart = (//i[@class='fas fa-shopping-cart'])[1]
+wishlist = (//i[@class='fas fa-heart'])[1]
+
+# feron logo
+feronimg = (//img[@class='logo-default'])[1]
+
+# Login Details
+loginUser = (//input[@type='email'])[1]
+user = m.sree.srikanth2@gmail.com
+loginPwd = (//input[@type='password'])[1]
+pwd = feron39
+btnLogin = (//button[@type='submit'])[2]
+afterlogin = //a[@data-toggle='dropdown']
+profile = //a[contains(.,'Profile')]
+logout = //a[contains(.,'Logout')]
+
+#Quick links
+qhome = //a[@href='#'][contains(.,'Home')]
+qaboutus = (//a[@href='http://grepthorhosting.com/feron/about_Us'])[4]
+qcareers = //a[@href='#'][contains(.,'Careers')]
+qcontacus = (//a[@href='http://grepthorhosting.com/feron/contact'])[145]
+
+#Social media Top
+Tfacebook = (//a[@href='https://www.facebook.com/FERON-healthcare-103652767688190/?modal=admin_todo_tour'])[1]
+Ttwitter = (//a[@href='https://twitter.com/feronhealthcare'])[1]
+Tinstagram = (//a[@href='https://www.instagram.com/accounts/login/?hl=en'])[1]
+Ttumblr = (//a[@href='https://www.tumblr.com/login'])[1]
+
+#Social media Bottom
+Bfacebook = (//a[@href='https://www.facebook.com/FERON-healthcare-103652767688190/?modal=admin_todo_tour'])[2]
+Btwitter = (//a[@href='https://twitter.com/feronhealthcare'])[2]
+Binstagram = (//a[@href='https://www.instagram.com/accounts/login/?hl=en'])[2]
+Btumblr = (//a[@href='https://www.tumblr.com/login'])[2]
+
+#Sign up
+firstName = //input[@name='first_name']
+firstName1 = yaman
+lastName = //input[@name='last_name']
+lastName1 = yam
+email = //input[@name='email']
+email1 = yaman4@gmail.com
+phone = //input[@name='mobile_number']
+phone1 = 9876543214
+sgpwd = //input[@name='pswd']
+sgpwd1 = 111222
+sgconfpwd = //input[@name='cpswd']
+sgconfpwd1 = 111222
+RegisterBtn = //button[@name='register']
+
+
+#Payment
+OnlineProducts = //a[text()='Online Products']
+Nephrology = (//option[@id='category_id'])[22]
+OncologyProducts = (//option[@id='category_id'])[23]
+CriticalCareProducts = (//option[@id='category_id'])[24]
+InfertilityandGynecologyProducts = (//option[@id='category_id'])[25]
+OrthopedicandRheumatologyProducts = (//option[@id='category_id'])[26]
+Gastroenterology = (//option[@id='category_id'])[27]
+HairandSkinBeautyHealth = (//option[@id='category_id'])[28]
+product1 = (//h3[1]//a[starts-with(@href,'http://grepthorhosting.com/feron/product_info?id=')])[1]
+AllProducts = (//h3[1]//a[starts-with(@href,'http://grepthorhosting.com/feron/product_info?id=')])
+NextBtn = //a[@rel='next']
+AddtoCart = //input[@value='ADD TO CART']
+ProceedToCheckout = //a[@class='btn btn-filled p-3']
+purpose = //select[@id='purpose']
+others = //option[. = 'Others']
+location = //select[contains(@id,'localtion')]
+madhapur = //option[. = 'Madhapur']
+madhapurValue = Madhapur
+userTextBox = //textarea[@id='usr']
+hyd = Hyderabad
+payBtn = //button[@id='pay-button']
+NextBtn = //a[contains(@rel,'next')]
+continueToPay = //button[text()='Continue to pay']
+CardNumber = (//input[@id='cardNumber'])
+CardExpiry = (//input[@id='cardExp'])
+CardCVV = (//input[@id='cardCvv'])
+NameOnCard = (//input[@id='cardHolder'])
+PayNowButton = (//button[@id='citrusCardPayButton'])
+
+

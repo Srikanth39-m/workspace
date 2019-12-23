@@ -1,0 +1,4 @@
+# Admin Panel
+ProductList = //span[text()='Product List']
+AddProduct = //a[text()='ADD Product']
+Online = //label[text()='Online']

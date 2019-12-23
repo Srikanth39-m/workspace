@@ -1,0 +1,52 @@
+package com.feron.Admin;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+import com.main.nextClick.MainTest;
+
+public class feronAdminAddingProducts extends MainTest {
+  @Test
+  public void f() throws IOException {
+	  File src=new File("./properties/FeronAdminData.xlsx");
+	  FileInputStream fi=new FileInputStream(src);
+	  XSSFWorkbook wb=new XSSFWorkbook(fi);
+	  XSSFSheet sh=wb.getSheetAt(0);
+	  //System.out.println(sh.getRow(0).getCell(0).getStringCellValue());
+	  int rc=sh.getLastRowNum();
+	
+
+	  feronAdminLaunch();
+	  click(driver, config.getProperty("ProductList"));
+	  click(driver, config.getProperty("AddProduct"));
+	  click(driver, config.getProperty("Online"));
+	  for (int i = 1; i <= rc; i++) {
+		  sendkey(driver, config.getProperty("ProductName"), sh.getRow(i).getCell(0).getStringCellValue());
+		  sendkey(driver, config.getProperty("ProductTypeDrop"), sh.getRow(i).getCell(1).getStringCellValue());
+		  click(driver, config.getProperty("CategoryNameDrop"));
+		  sendkey(driver, config.getProperty("CategoryNameDrop"), sh.getRow(i).getCell(2).getStringCellValue());
+		  sendkeyNum(driver, config.getProperty("QuantityPerPack"),sh.getRow(i).getCell(3).getNumericCellValue());
+		  sendkeyNum(driver, config.getProperty("Price"), sh.getRow(i).getCell(4).getNumericCellValue());
+		  sendkeyNum(driver, config.getProperty("GST"), sh.getRow(i).getCell(5).getNumericCellValue());
+		  sendkeyNum(driver, config.getProperty("Discount"), sh.getRow(i).getCell(6).getNumericCellValue());
+		  sendkeyNum(driver, config.getProperty("Quantity"), sh.getRow(i).getCell(7).getNumericCellValue());
+		  ac=new Actions(driver);
+		  		  ac.doubleClick(driver.findElement(By.xpath(config.getProperty("Discription")))).perform();
+
+//		  		  click(driver, config.getProperty("Discription"));
+		  sendkey(driver, config.getProperty("Discription"), sh.getRow(i).getCell(8).getStringCellValue());
+		  sendkey(driver, config.getProperty("ChooseFile"), sh.getRow(i).getCell(9).getStringCellValue());
+		  
+		  
+	}
+	  
+	  
+  
+  }
+}

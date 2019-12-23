@@ -1,0 +1,19 @@
+# feron Admin Url
+url = http://grepthorhosting.com/feron/admin
+
+# Feron Admin Panel
+ProductList = //span[text()='Product List']
+AddProduct = //a[text()='ADD Product']
+Online = //label[text()='Online']
+ProductName = //input[@name='name']
+ProductTypeDrop = //select[@name='product_name']
+CategoryNameDrop = //select[@name='category_name']
+QuantityPerPack = //input[@name='per_strip_pack']
+Price = //input[@name='price']
+GST = //input[@name='GST']
+Discount = //input[@name='offer']
+Quantity = //input[@name='quantity']
+Discription = //body[@class='cke_editable cke_editable_themed cke_contents_ltr cke_show_borders'] 
+ChooseFile = //input[@name='files[]']
+Submit = //button[text()='SUBMIT']
+

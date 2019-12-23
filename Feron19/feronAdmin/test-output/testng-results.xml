@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="640395" started-at="2019-12-20T13:46:38 IST" finished-at="2019-12-20T13:57:19 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="640395" started-at="2019-12-20T13:46:38 IST" finished-at="2019-12-20T13:57:19 IST">
+      <class name="com.feron.Admin.feronAdminAddingProducts">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.feron.Admin.feronAdminAddingProducts@3b084709]" name="f" duration-ms="640355" started-at="2019-12-20T13:46:39 IST" finished-at="2019-12-20T13:57:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.feron.Admin.feronAdminAddingProducts -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
